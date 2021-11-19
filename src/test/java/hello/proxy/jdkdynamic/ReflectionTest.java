@@ -1,9 +1,8 @@
-package hello.proxy.jdkdynamicproxy;
+package hello.proxy.jdkdynamic;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 @Slf4j
@@ -29,7 +28,7 @@ public class ReflectionTest {
     @Test
     void reflection1() throws Exception {
         // 클래스 정보
-        Class classhello = Class.forName("hello.proxy.jdkdynamicproxy.ReflectionTest$Hello");
+        Class classhello = Class.forName("hello.proxy.jdkdynamic.ReflectionTest$Hello");
 
         Hello target = new Hello();
         // callA method information
@@ -46,7 +45,7 @@ public class ReflectionTest {
     @Test
     void reflection2() throws Exception {
         // 클래스 정보
-        Class classhello = Class.forName("hello.proxy.jdkdynamicproxy.ReflectionTest$Hello");
+        Class classhello = Class.forName("hello.proxy.jdkdynamic.ReflectionTest$Hello");
 
         Hello target = new Hello();
         // callA method information
